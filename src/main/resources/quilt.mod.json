@@ -1,0 +1,32 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "com.github.allinkdev",
+		"id": "pleasestoploggingmyaccesstoken",
+		"version": "${version}",
+		"metadata": {
+			"name": "Please Stop Logging My Access Token",
+			"description": "Simple mod that aims to prevent Minecraft 1.6.4 logging your access token to stderr on launch.",
+			"contributors": {
+				"Allink": "Owner"
+			},
+			"contact": {
+				"homepage": "https://github.com/allinkdev/PleaseStopLoggingMyAccessToken",
+				"issues": "https://github.com/allinkdev/PleaseStopLoggingMyAccessToken/issues",
+				"sources": "https://github.com/allinkdev/PleaseStopLoggingMyAccessToken.git"
+			}
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.17.6-"
+			},
+			{
+				"id": "minecraft",
+				"versions": "1.6.x"
+			}
+		]
+	},
+	"mixin": "pleasestoploggingmyaccesstoken.mixins.json"
+}
